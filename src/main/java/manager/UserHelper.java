@@ -9,6 +9,9 @@ public class UserHelper extends HelperBase{
         super(wd);
     }
 
+
+/////////////////////////////   Methods   /////////////////////////////
+
     public void openLoginForm(){
         click(By.xpath("//a[text()=' Log in ']"));
     }
@@ -22,13 +25,24 @@ public class UserHelper extends HelperBase{
         click(By.cssSelector("[type='submit']"));
     }
 
-    public void openRegistrationForm() {
+    // --------------------------  Registration  --------------------------
+
+    public void openSingUpForm() {
+        click(By.xpath("//*[text()=' Sign up ']"));
     }
 
-    public void fillRegistrationForm(String markus, String strom, String s, String s1) {
+    public void fillRegistrationForm(String name, String lastname, String email, String password) {
+        type(By.id("name"),name);
+        type(By.id("lastName"), lastname);
+        type(By.id("email"), email);
+        type(By.id("password"), password);
     }
 
-    public void checkPolicy() {
+    public void checkBox() {
+        //wd.findElement(By.cssSelector("[class='checkbox-label terms-label']"));
+        //click(By.cssSelector("[class='ng-dirty ng-touched ng-valid']"));
+        //click(By.cssSelector("[class='checkbox-label terms-label']"));
+        click(By.cssSelector("[class='checkbox-container']"));
     }
 }
 

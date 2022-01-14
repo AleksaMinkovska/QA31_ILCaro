@@ -12,7 +12,6 @@ public class HelperBase {
         this.wd = wd;
     }
 
-
     public void type(By locator, String text) {
         if (text != null && !text.isEmpty()) {
             WebElement element = wd.findElement(locator);
