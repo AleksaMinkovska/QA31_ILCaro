@@ -12,6 +12,9 @@ public class HelperBase {
         this.wd = wd;
     }
 
+
+/////////////////////////   Common methods click & type   /////////////////////////
+
     public void type(By locator, String text) {
         if (text != null && !text.isEmpty()) {
             WebElement element = wd.findElement(locator);
@@ -27,4 +30,13 @@ public class HelperBase {
 
     }
 
+ //////////////////////   method pause   //////////////////////
+
+    public void pause(int millsec){
+        try {
+            Thread.sleep(millsec);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
