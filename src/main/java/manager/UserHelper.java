@@ -2,8 +2,10 @@ package manager;
 
 import models.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -71,6 +73,16 @@ public class UserHelper extends HelperBase{
         }
 
     }
+
+    public void checkBoxByXY(){
+        WebElement lable = wd.findElement(By.xpath("//label[@for='terms-of-use']"));
+        Rectangle rect = lable.getRect();
+        int x = rect.getX()+5;
+        int y = rect.getY()+5;
+
+        Actions actions = new Actions(wd);
+        actions.moveByOffset(x,y).click().release().perform();
+    }
 ///////////////////////////////////  ASSERT METHODS  ///////////////////////////////////
 
     public boolean isRegistrationSuccess() {
@@ -86,6 +98,19 @@ public class UserHelper extends HelperBase{
         WebElement loginMessage = wd.findElement(By.cssSelector("h2.message"));
         String mes = loginMessage.getText();
         return mes.equals("Logged in success");
+    }
+
+    public boolean isLogOutButtonPresent() {
+
+        return isElementPresent(By.cssSelector("[href$='/logout?url=%2Fsearch']"));
+    }
+
+    public void logOut() {
+        click(By.cssSelector("[href$='/logout?url=%2Fsearch']"));
+    }
+
+    public void clickOkButton() {
+        click(By.xpath("//*[text()='Ok']"));
     }
 }
 

@@ -2,9 +2,20 @@ package tests;
 
 import models.User;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestsBase{
+
+
+    @BeforeMethod
+    public void precondition(){
+        //  if logged --> logOut
+        if(app.getUserHelper().isLogOutButtonPresent()){
+            app.getUserHelper().logOut();
+        }
+    }
 
 
     @Test
@@ -28,7 +39,7 @@ public class LoginTests extends TestsBase{
     @Test
     public void loginSuccessModel(){
 
-        User user = new User().withEmail("enastep@gmail.com").withPassword("12345nnnN");
+        User user = new User().withEmail("lenastep@gmail.com").withPassword("12345nnnN");
 
         app.getUserHelper().openLoginForm();
         app.getUserHelper().fillLoginForm(user);
@@ -39,5 +50,10 @@ public class LoginTests extends TestsBase{
     }
 
 
+    @AfterMethod
+    public void postcondition(){
+        //click Ok
+        app.getUserHelper().clickOkButton();
+    }
 }
 
