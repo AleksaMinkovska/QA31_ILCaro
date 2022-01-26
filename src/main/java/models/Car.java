@@ -22,7 +22,6 @@ public class Car {
     String doors;
     String seats;
     String carClass;
-
     String fuelConsumption;
     String carRegNumber;
     String price;

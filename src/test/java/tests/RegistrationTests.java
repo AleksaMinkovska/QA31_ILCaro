@@ -24,8 +24,8 @@ public class RegistrationTests extends TestsBase{
         System.out.println(index);
         app.getUserHelper().openSingUpForm();
         app.getUserHelper().fillRegistrationForm("Markus", "Strom", "markusstrom" + index + "@gmail.com", "Mstrom777%");
-        //app.getUserHelper().checkBox();
-        app.getUserHelper().checkBoxByXY();
+        app.getUserHelper().checkBox();
+        //app.getUserHelper().checkBoxByXY();
         app.getUserHelper().submitForm();
 
         //app.getUserHelper().pause(2000);  // metod pauzi testa
@@ -46,8 +46,8 @@ public class RegistrationTests extends TestsBase{
 
         app.getUserHelper().openSingUpForm();
         app.getUserHelper().fillRegistrationForm(user);
-        //app.getUserHelper().checkBox();
-        app.getUserHelper().checkBoxByXY();
+        app.getUserHelper().checkBox();
+        //app.getUserHelper().checkBoxByXY();
         app.getUserHelper().submitForm();
 
         Assert.assertTrue(app.getUserHelper().isRegistrationSuccess());

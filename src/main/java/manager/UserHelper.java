@@ -112,5 +112,13 @@ public class UserHelper extends HelperBase{
     public void clickOkButton() {
         click(By.xpath("//*[text()='Ok']"));
     }
+
+    public void login(User user) {
+        openLoginForm();
+        fillLoginForm(user);
+        submitForm();
+        clickOkButton();
+
+    }
 }
 

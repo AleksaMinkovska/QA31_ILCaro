@@ -21,7 +21,7 @@ public class TestsBase {
     @AfterSuite  // - в конце один раз после всех метобов тестов
 
     public void tearDown() {
-        app.stop();
+        //app.stop();
     }
 
 
