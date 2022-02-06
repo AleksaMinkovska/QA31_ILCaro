@@ -1,0 +1,6 @@
+6971 [Test worker] INFO  manager.ApplicationManager - All tests start in Chrome Browser
+17951 [Test worker] INFO  tests.TestsBase - Name of test: loginSuccess
+23069 [Test worker] INFO  tests.TestsBase - Test starts with email: ["lenastep@gmail.com"] and password: ["12345nnnN"]
+20:35:17 INFO  manager.ApplicationManager - All tests start in Chrome Browser
+20:35:21 INFO  tests.TestsBase - Name of test: loginSuccess
+20:35:26 INFO  tests.TestsBase - Test starts with email: ["lenastep@gmail.com"] and password: ["12345nnnN"]

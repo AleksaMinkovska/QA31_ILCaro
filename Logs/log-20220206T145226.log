@@ -1,0 +1,61 @@
+14:52:32 INFO  manager.ApplicationManager - All tests start in Chrome Browser
+14:52:37 INFO  tests.TestsBase - Name of test: addCarSuccess2
+14:52:37 INFO  manager.MyListener - Start find 'element' ---> By.cssSelector: [href$='/logout?url=%2Fsearch']
+14:52:42 INFO  manager.MyListener - Element with 'locator' ---> By.cssSelector: [href$='/logout?url=%2Fsearch'] was found
+14:52:42 INFO  manager.MyListener - Start find 'element' ---> By.xpath: //a[text()=' Log in ']
+14:52:42 INFO  manager.MyListener - Element with 'locator' ---> By.xpath: //a[text()=' Log in '] was found
+14:52:43 INFO  manager.MyListener - Start find 'element' ---> By.id: email
+14:52:43 INFO  manager.MyListener - Element with 'locator' ---> By.id: email was found
+14:52:44 INFO  manager.MyListener - Start find 'element' ---> By.id: password
+14:52:44 INFO  manager.MyListener - Element with 'locator' ---> By.id: password was found
+14:52:44 INFO  manager.MyListener - Start find 'element' ---> By.cssSelector: [type='submit']
+14:52:45 INFO  manager.MyListener - Element with 'locator' ---> By.cssSelector: [type='submit'] was found
+14:52:45 INFO  manager.MyListener - Start find 'element' ---> By.xpath: //*[text()='Ok']
+14:52:46 INFO  manager.MyListener - Element with 'locator' ---> By.xpath: //*[text()='Ok'] was found
+14:52:46 INFO  tests.TestsBase - Car was added for userUser{name='null', lastName='null', email='noa@gmail.com', password='Nnoa12345$'}
+14:52:46 INFO  manager.MyListener - Start find 'element' ---> By.cssSelector: [href='/let-car-work']
+14:52:46 INFO  manager.MyListener - Element with 'locator' ---> By.cssSelector: [href='/let-car-work'] was found
+14:52:47 INFO  manager.MyListener - Start find 'element' ---> By.xpath: //input[@id='pickUpPlace']
+14:52:47 INFO  manager.MyListener - Element with 'locator' ---> By.xpath: //input[@id='pickUpPlace'] was found
+14:52:47 INFO  manager.MyListener - Start find 'element' ---> By.cssSelector: .pac-item
+14:52:48 INFO  manager.MyListener - Element with 'locator' ---> By.cssSelector: .pac-item was found
+14:52:48 INFO  manager.MyListener - Start find 'element' ---> By.id: ma
+14:52:54 INFO  manager.MyListener - We have a 'throwable' ---> no such element: Unable to locate element: {"method":"css selector","selector":"#ma"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7VMBUT4', ip: '192.168.1.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e2cf82b53d7436467eda7912a9e8c6c
+*** Element info: {Using=id, value=ma}
+14:52:54 INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ma"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7VMBUT4', ip: '192.168.1.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e2cf82b53d7436467eda7912a9e8c6c
+*** Element info: {Using=id, value=ma}
+14:52:54 INFO  manager.MyListener - Link of 'your screenshot' with 'error'---> src/test/screenshots/screen3174.png
+14:52:54 INFO  manager.MyListener - Start find 'element' ---> By.cssSelector: button[class='neutral-button ng-star-inserted']
+14:52:59 INFO  manager.MyListener - We have a 'throwable' ---> no such element: Unable to locate element: {"method":"css selector","selector":"button[class='neutral-button ng-star-inserted']"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7VMBUT4', ip: '192.168.1.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e2cf82b53d7436467eda7912a9e8c6c
+*** Element info: {Using=css selector, value=button[class='neutral-button ng-star-inserted']}
+14:52:59 INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[class='neutral-button ng-star-inserted']"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7VMBUT4', ip: '192.168.1.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e2cf82b53d7436467eda7912a9e8c6c
+*** Element info: {Using=css selector, value=button[class='neutral-button ng-star-inserted']}
+14:52:59 INFO  manager.MyListener - Link of 'your screenshot' with 'error'---> src/test/screenshots/screen3179.png

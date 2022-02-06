@@ -20,6 +20,7 @@ public class LoginTests extends TestsBase{
 
     @Test
     public void loginSuccess(){
+        logger.info("Test starts with email: [\"lenastep@gmail.com\"] and password: [\"12345nnnN\"]");
         // open form login
         app.getUserHelper().openLoginForm();
 
@@ -45,8 +46,10 @@ public class LoginTests extends TestsBase{
         app.getUserHelper().fillLoginForm(user);
         app.getUserHelper().submitForm();
 
+        app.getUserHelper().takeScreenShot("src/test/screenshots/scr2.png");
 
         Assert.assertTrue(app.getUserHelper().isLoginSuccess());
+
     }
 
 

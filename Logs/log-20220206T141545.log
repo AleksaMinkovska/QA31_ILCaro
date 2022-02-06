@@ -1,0 +1,62 @@
+14:15:52 INFO  manager.ApplicationManager - All tests start in Chrome Browser
+14:15:56 INFO  tests.TestsBase - Name of test: addCarSuccess1
+14:15:56 INFO  manager.MyListener - Start find element ---> By.cssSelector: [href$='/logout?url=%2Fsearch']
+14:16:01 INFO  manager.MyListener - Element with locator ---> By.cssSelector: [href$='/logout?url=%2Fsearch'] was found
+14:16:01 INFO  manager.MyListener - Start find element ---> By.xpath: //a[text()=' Log in ']
+14:16:01 INFO  manager.MyListener - Element with locator ---> By.xpath: //a[text()=' Log in '] was found
+14:16:01 INFO  manager.MyListener - Start find element ---> By.id: email
+14:16:02 INFO  manager.MyListener - Element with locator ---> By.id: email was found
+14:16:03 INFO  manager.MyListener - Start find element ---> By.id: password
+14:16:03 INFO  manager.MyListener - Element with locator ---> By.id: password was found
+14:16:05 INFO  manager.MyListener - Start find element ---> By.cssSelector: [type='submit']
+14:16:05 INFO  manager.MyListener - Element with locator ---> By.cssSelector: [type='submit'] was found
+14:16:05 INFO  manager.MyListener - Start find element ---> By.xpath: //*[text()='Ok']
+14:16:07 INFO  manager.MyListener - Element with locator ---> By.xpath: //*[text()='Ok'] was found
+14:16:07 INFO  tests.TestsBase - Car was added for userUser{name='null', lastName='null', email='noa@gmail.com', password='Nnoa12345$'}
+14:16:08 INFO  tests.TestsBase - Car was addedCar(location=Tel Aviv, Israel, make=SUPER, model=CAR, year=2022, engine=3.5, fuel=Petrol, gear=MT, wD=AWD, doors=2, seats=4, carClass=sport, fuelConsumption=12l, carRegNumber=33-967-99, price=199, distance=3000, features=null, about=try it)
+14:16:08 INFO  manager.MyListener - Start find element ---> By.cssSelector: [href='/let-car-work']
+14:16:08 INFO  manager.MyListener - Element with locator ---> By.cssSelector: [href='/let-car-work'] was found
+14:16:09 INFO  manager.MyListener - Start find element ---> By.xpath: //input[@id='pickUpPlace']
+14:16:09 INFO  manager.MyListener - Element with locator ---> By.xpath: //input[@id='pickUpPlace'] was found
+14:16:10 INFO  manager.MyListener - Start find element ---> By.cssSelector: .pac-item
+14:16:11 INFO  manager.MyListener - Element with locator ---> By.cssSelector: .pac-item was found
+14:16:12 INFO  manager.MyListener - Start find element ---> By.id: ma
+14:16:17 INFO  manager.MyListener - We have a throwable ---> no such element: Unable to locate element: {"method":"css selector","selector":"#ma"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7VMBUT4', ip: '192.168.1.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55212}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4663366408a2c5662b0b54e2a774573
+*** Element info: {Using=id, value=ma}
+14:16:17 INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ma"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7VMBUT4', ip: '192.168.1.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55212}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4663366408a2c5662b0b54e2a774573
+*** Element info: {Using=id, value=ma}
+14:16:17 INFO  manager.MyListener - Number of your screen ---> 
+14:16:17 INFO  manager.MyListener - Start find element ---> By.cssSelector: button[class='neutral-button ng-star-inserted']
+14:16:22 INFO  manager.MyListener - We have a throwable ---> no such element: Unable to locate element: {"method":"css selector","selector":"button[class='neutral-button ng-star-inserted']"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7VMBUT4', ip: '192.168.1.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55212}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4663366408a2c5662b0b54e2a774573
+*** Element info: {Using=css selector, value=button[class='neutral-button ng-star-inserted']}
+14:16:22 INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[class='neutral-button ng-star-inserted']"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7VMBUT4', ip: '192.168.1.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55212}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4663366408a2c5662b0b54e2a774573
+*** Element info: {Using=css selector, value=button[class='neutral-button ng-star-inserted']}
+14:16:22 INFO  manager.MyListener - Number of your screen ---> 

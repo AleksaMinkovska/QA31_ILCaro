@@ -13,7 +13,9 @@ public class AddCarTests extends TestsBase{
     public void precondition(){
         //if !logged --> login()
         if(!app.getUserHelper().isLogOutButtonPresent()){
-            app.getUserHelper().login(new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$"));
+            User user = new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$");
+            app.getUserHelper().login(user);
+            logger.info("Car was added for user" + user.toString());
         }
 
     }
@@ -42,6 +44,8 @@ public class AddCarTests extends TestsBase{
                 .features("null")
                 .about("try it")
                 .build();
+
+        logger.info("Car was added" + car.toString());
 
         app.getCarHelper().openCarForm();
         app.getCarHelper().fillCarForm(car);
