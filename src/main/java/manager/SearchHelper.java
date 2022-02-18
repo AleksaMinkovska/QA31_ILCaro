@@ -3,6 +3,8 @@ package manager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -107,19 +109,34 @@ public class SearchHelper extends HelperBase {
     }
 
     private void typePeriodInPast(String from, String to) {
-        type(By.id("dates"),from + " - " + to);
+
+        type(By.id("dates"), from + " - " + to);
+        click(By.cssSelector(".cdk-overlay-container"));
+
     }
+
 
     public boolean isDateInPast() {
-        WebElement el = wd.findElement(By.cssSelector(".error .ng-star-inserted"));
-        String text = el.getText();
-        return text.equals("You can't pick date before today");
-        //return text.contains("pick date before today");
 
+        WebElement el = wd.findElement(By.cssSelector(".error .ng-star-inserted"));
+        String  text = el.getText();
+
+        new WebDriverWait(wd,10)
+                .until(ExpectedConditions.textToBePresentInElement(el,text));
+
+
+        System.out.println(text);
+        // return text.equals(" You can't pick date before today ");
+        return text.contains("pick date before today");
     }
 
+
+
+
     public boolean isYallaButtonInactive() {
+
         return !wd.findElement(By.cssSelector("[type='submit']")).isEnabled();
+
     }
 }
 

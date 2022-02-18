@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -9,7 +10,7 @@ import org.testng.annotations.Test;
 public class LoginTests extends TestsBase{
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void precondition(){
         //  if logged --> logOut
         if(app.getUserHelper().isLogOutButtonPresent()){
@@ -37,7 +38,7 @@ public class LoginTests extends TestsBase{
 
 //////////////////////////////   MODEL  //////////////////////////////
 
-    @Test
+    @Test(groups = {"web"})
     public void loginSuccessModel(){
 
         User user = new User().withEmail("lenastep@gmail.com").withPassword("12345nnnN");
@@ -52,11 +53,57 @@ public class LoginTests extends TestsBase{
 
     }
 
+//////////////////////    Tests with DataProvider     //////////////////////
 
-    @AfterMethod
+
+    @Test(dataProvider = "loginValidData", dataProviderClass = MyDataProvider.class)
+    public void loginSuccessDataProvider(String email, String password){
+
+        logger.info("Test starts with DataProvider ---> email: "+email+" & password: "+password);
+
+        app.getUserHelper().openLoginForm();
+        app.getUserHelper().fillLoginForm(email, password);
+        app.getUserHelper().submitForm();
+
+        Assert.assertTrue(app.getUserHelper().isLoginSuccess());
+    }
+
+
+
+
+
+
+//    @Test(dataProvider = "loginValidDataModel", dataProviderClass = MyDataProvider.class)
+//    public void loginSuccessModelDataProvider(User user){
+//
+//        logger.info("Test starts with data MODEL user: ---> " + user.toString());
+//
+//        app.getUserHelper().openLoginForm();
+//        app.getUserHelper().fillLoginForm(user);
+//        app.getUserHelper().submitForm();
+//        app.getUserHelper().takeScreenShot("src/test/screenshots/scr2.png");
+//
+//        Assert.assertTrue(app.getUserHelper().isLoginSuccess());
+//
+//    }
+
+
+
+
+
+
+
+
+
+    @AfterMethod(alwaysRun = true)
     public void postcondition(){
         //click Ok
         app.getUserHelper().clickOkButton();
     }
+
 }
+
+
+
+
 

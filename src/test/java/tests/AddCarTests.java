@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.Car;
 import models.User;
 import org.testng.Assert;
@@ -9,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class AddCarTests extends TestsBase{
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void precondition(){
         //if !logged --> login()
         if(!app.getUserHelper().isLogOutButtonPresent()){
@@ -20,7 +21,7 @@ public class AddCarTests extends TestsBase{
 
     }
 
-    @Test
+    @Test(groups = {"web"})
     public void addCarSuccess1(){
         //open car form --> fill car form --> attach picture --> submit
 
@@ -89,11 +90,28 @@ public class AddCarTests extends TestsBase{
         Assert.assertTrue(app.getCarHelper().isCarAdded());
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postConditions(){
         app.getCarHelper().clickSearchButton();
         app.getUserHelper().logOut();
     }
+
+
+
+
+//    @Test(dataProvider = "addCarSuccessDataModelCSV", dataProviderClass = MyDataProvider.class)
+//    public void addCarSuccessDataProviderCSV(Car car) {
+//
+//        logger.info("Car was added from CSV file: " + car.toString());
+//
+//        app.getCarHelper().openCarForm();
+//        app.getCarHelper().fillCarForm(car);
+//        app.getCarHelper().attachPhoto("C:\\Users\\User\\Desktop\\Downloads\\car.jpg");
+//        app.getCarHelper().submitForm();
+//
+//        Assert.assertTrue(app.getCarHelper().isCarAdded());
+//
+//    }
 
 
 }

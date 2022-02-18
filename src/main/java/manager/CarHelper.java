@@ -20,7 +20,7 @@ public class CarHelper extends HelperBase{
 
     public void fillCarForm(Car car) {
         typeLocation(car.getLocation());
-        type(By.id("ma"), car.getMake());
+        type(By.id("make"), car.getMake());
         type(By.id("model"), car.getModel());
         type(By.id("year"), car.getYear());
         type(By.id("engine"), car.getEngine());
